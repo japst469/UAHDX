@@ -1,0 +1,4 @@
+D:\PortableApps\PortableApps\MINE\UAHDX\Unity Hockey\obj\Debug\Assembly-CSharp.dll
+D:\PortableApps\PortableApps\MINE\UAHDX\Unity Hockey\obj\Debug\Assembly-CSharp.pdb
+D:\PortableApps\PortableApps\MINE\Unity\UAHDX\Unity Hockey\obj\Debug\Assembly-CSharp.dll
+D:\PortableApps\PortableApps\MINE\Unity\UAHDX\Unity Hockey\obj\Debug\Assembly-CSharp.pdb

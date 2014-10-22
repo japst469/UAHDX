@@ -1,0 +1,11 @@
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\Temp\bin\Debug\UnityEditor.dll
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\Temp\bin\Debug\UnityEngine.dll
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\Temp\bin\Debug\Mono.Cecil.dll
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\Temp\bin\Debug\nunit.framework.dll
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\Temp\bin\Debug\Unity.DataContract.dll
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\obj\Debug\Assembly-CSharp-firstpass.dll
+D:\FILES\RMU\ENGR 3410 Fundamentals of Software Engineering\Unity Hockey\obj\Debug\Assembly-CSharp-firstpass.pdb
