@@ -1,0 +1,110 @@
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp.dll
+-debug
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll
+-r:"Assets/Extra Assets/EZReplayManager/extension/scripts/EZReplayManagerDemo.dll"
+-r:Assets/Scripts/System.Drawing.dll
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll"
+-define:UNITY_4_5_3
+-define:UNITY_4_5
+-define:UNITY_64
+-define:UNITY_STANDALONE_WIN
+-define:ENABLE_MICROPHONE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_NEW_HIERARCHY 
+-define:ENABLE_AUDIO_FMOD
+-define:UNITY_STANDALONE
+-define:ENABLE_MONO
+-define:ENABLE_TERRAIN
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_GENERICS
+-define:INCLUDE_WP8SUPPORT
+-define:ENABLE_MOVIES
+-define:ENABLE_WWW
+-define:ENABLE_IMAGEEFFECTS
+-define:INCLUDE_WP_BLUE_SUPPORT
+-define:ENABLE_WEBCAM
+-define:INCLUDE_METROSUPPORT
+-define:RENDER_SOFTWARE_CURSOR
+-define:ENABLE_NETWORK
+-define:ENABLE_PHYSICS
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_2D_PHYSICS
+-define:ENABLE_SHADOWS
+-define:ENABLE_AUDIO
+-define:ENABLE_NAVMESH_CARVING
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_SINGLE_INSTANCE_BUILD_SETTING
+-define:ENABLE_PROFILER
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_WIN
+"Assets/Extra Assets/EZReplayManager/example1/scripts/Cam.cs"
+"Assets/Extra Assets/EZReplayManager/example1/scripts/DrawLines.cs"
+"Assets/Extra Assets/EZReplayManager/example1/scripts/Game.cs"
+"Assets/Extra Assets/EZReplayManager/example1/scripts/Heli2Record.cs"
+"Assets/Extra Assets/EZReplayManager/example1/scripts/HeliMovement.cs"
+"Assets/Extra Assets/EZReplayManager/example2/Gem Shader/Example/GemSpawner.cs"
+"Assets/Extra Assets/EZReplayManager/example2/MouseLook.cs"
+"Assets/Extra Assets/EZReplayManager/example2/scripts/BaseMouseLook.cs"
+"Assets/Extra Assets/EZReplayManager/example2/scripts/DummyAI.cs"
+"Assets/Extra Assets/EZReplayManager/example2/scripts/Monitor.cs"
+"Assets/Extra Assets/EZReplayManager/example2/scripts/MouseOrbitZoom.cs"
+"Assets/Extra Assets/EZReplayManager/example2/scripts/Player.cs"
+"Assets/Extra Assets/EZReplayManager/example2/scripts/Projectile.cs"
+"Assets/Extra Assets/EZReplayManager/general/Object2Record.cs"
+"Assets/Extra Assets/TagFrenzy/Scripts/Core/EditorTag.cs"
+"Assets/Extra Assets/TagFrenzy/Scripts/Core/MultiTagManager.cs"
+"Assets/Extra Assets/TagFrenzy/Scripts/Core/TagFrenzyList.cs"
+"Assets/Extra Assets/TagFrenzy/Scripts/Core/TagMatch.cs"
+"Assets/Extra Assets/TagFrenzy/Scripts/Core/Tags.cs"
+"Assets/Extra Assets/TagFrenzy/Scripts/Test.cs"
+"Assets/Extra Assets/TagFrenzy/Scripts/User/GameObjectExtensions.cs"
+"Assets/Extra Assets/TagFrenzy/Scripts/User/MultiTag.cs"
+"Assets/Extra Assets/TimeSaverSoundManager/Example/Script/ShootingSound.cs"
+"Assets/Extra Assets/TimeSaverSoundManager/Scripts/Sound.cs"
+"Assets/Extra Assets/TimeSaverSoundManager/Scripts/SoundManager.cs"
+Assets/Scripts/AnimatedGifDrawer.cs
+Assets/Scripts/BillBoard.cs
+Assets/Scripts/Camera/BillBoard.cs
+Assets/Scripts/Camera/CameraRevolve.cs
+Assets/Scripts/CameraControl.cs
+Assets/Scripts/CameraRevolve.cs
+Assets/Scripts/Credits.cs
+Assets/Scripts/Debug/DebugDisable.cs
+Assets/Scripts/Debug/DebugJmpScene.cs
+Assets/Scripts/Debug/DebugReveal.cs
+Assets/Scripts/Gameplay/Controls/PaddleController.cs
+Assets/Scripts/Gameplay/Controls/Pucky.cs
+Assets/Scripts/Gameplay/GoalBeh.cs
+Assets/Scripts/Gameplay/InitPlayer.cs
+Assets/Scripts/Gameplay/PwrCollectible.cs
+Assets/Scripts/Gameplay/Score.cs
+Assets/Scripts/Gameplay/Scoring.cs
+Assets/Scripts/InitTitle.cs
+Assets/Scripts/MainMenu.cs
+Assets/Scripts/Menus/AnimatedGifDrawer.cs
+Assets/Scripts/Menus/Credits.cs
+Assets/Scripts/Menus/InitTitle.cs
+Assets/Scripts/Menus/MainMenu.cs
+Assets/Scripts/Menus/Opts.cs
+Assets/Scripts/Menus/PlayerSel.cs
+Assets/Scripts/Options/ToggleAnn.cs
+Assets/Scripts/Options/ToggleAudio.cs
+Assets/Scripts/Options/ToggleMusic.cs
+Assets/Scripts/Options/ToggleSound.cs
+Assets/Scripts/Opts.cs
+Assets/Scripts/PaddleController.cs
+Assets/Scripts/Player.cs
+Assets/Scripts/PlayerSel.cs
+Assets/Scripts/TableController.cs
+Assets/Scripts/Toolbox/MonoBehaviourExtended.cs
+Assets/Scripts/Toolbox/PlaySong.cs
+Assets/Scripts/Toolbox/Singleton.cs
+Assets/Scripts/Toolbox/Toolbox.cs
+Assets/Scripts/__GameData.cs
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Mono\lib/mono/unity\System.Runtime.Serialization.dll"
+-r:"C:/Program Files (x86)/Unity/Editor/Data/Mono\lib/mono/unity\System.Xml.Linq.dll"
