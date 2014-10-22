@@ -1,0 +1,6 @@
+The scripts in this folder "properly"
+create a working Singleton class, as acording to IBM.
+
+It is accessed by Toolbox.Instance.[SingletonClassName]. [variable]
+
+@Accessing of variables is NOT working during runtime, in some situations

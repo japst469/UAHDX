@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tags>
+  <tag id="1">Puck</tag>
+  <tag id="2">Paddle</tag>
+  <tag id="3">Bounds</tag>
+  <tag id="4">Ground</tag>
+  <tag id="5">Goal</tag>
+  <tag id="6">Powerups</tag>
+  <tag id="7">Red</tag>
+  <tag id="8">Blue</tag>
+  <tag id="9">Green</tag>
+  <tag id="10">Yellow</tag>
+  <tag id="11">NoColor</tag>
+  <tag id="12">Reset</tag>
+</tags>
