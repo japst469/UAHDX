@@ -156,7 +156,7 @@ public class Toolbox : MonoBehaviour
         {
             false,false,false,false,false,false,   
             false,false,false,false,false,false,
-            false,false,false,false,false,false
+            false,false,false,false,false,false,
         };
 
         //Multiplicity of poweurp collected in inventory.

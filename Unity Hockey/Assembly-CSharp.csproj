@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_64;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_2;UNITY_4_5;UNITY_64;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;DEVELOPMENT_BUILD;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Productivity/Unity/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Productivity/Unity/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -71,65 +71,35 @@
      <Compile Include="Assets\Extra Assets\TimeSaverSoundManager\Example\Script\ShootingSound.cs" />
      <Compile Include="Assets\Extra Assets\TimeSaverSoundManager\Scripts\Sound.cs" />
      <Compile Include="Assets\Extra Assets\TimeSaverSoundManager\Scripts\SoundManager.cs" />
-     <Compile Include="Assets\Scripts\AnimatedGifDrawer.cs" />
-     <Compile Include="Assets\Scripts\BillBoard.cs" />
      <Compile Include="Assets\Scripts\Camera\BillBoard.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraRevolve.cs" />
-     <Compile Include="Assets\Scripts\CameraControl.cs" />
-     <Compile Include="Assets\Scripts\CameraRevolve.cs" />
-     <Compile Include="Assets\Scripts\Credits.cs" />
      <Compile Include="Assets\Scripts\Debug\DebugDisable.cs" />
      <Compile Include="Assets\Scripts\Debug\DebugJmpScene.cs" />
      <Compile Include="Assets\Scripts\Debug\DebugReveal.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Controls\PaddleController.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Controls\Pucky.cs" />
      <Compile Include="Assets\Scripts\Gameplay\GoalBeh.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\InitPlayer.cs" />
      <Compile Include="Assets\Scripts\Gameplay\PwrCollectible.cs" />
-     <Compile Include="Assets\Scripts\Gameplay\Score.cs" />
      <Compile Include="Assets\Scripts\Gameplay\Scoring.cs" />
-     <Compile Include="Assets\Scripts\InitTitle.cs" />
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menus\AnimatedGifDrawer.cs" />
      <Compile Include="Assets\Scripts\Menus\Credits.cs" />
+     <Compile Include="Assets\Scripts\Menus\Cursor.cs" />
      <Compile Include="Assets\Scripts\Menus\InitTitle.cs" />
      <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Menus\Opts.cs" />
      <Compile Include="Assets\Scripts\Menus\PlayerSel.cs" />
-     <Compile Include="Assets\Scripts\Options\ToggleAnn.cs" />
-     <Compile Include="Assets\Scripts\Options\ToggleAudio.cs" />
-     <Compile Include="Assets\Scripts\Options\ToggleMusic.cs" />
-     <Compile Include="Assets\Scripts\Options\ToggleSound.cs" />
-     <Compile Include="Assets\Scripts\Opts.cs" />
-     <Compile Include="Assets\Scripts\PaddleController.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scripts\PlayerSel.cs" />
-     <Compile Include="Assets\Scripts\TableController.cs" />
-     <Compile Include="Assets\Scripts\Toolbox\MonoBehaviourExtended.cs" />
      <Compile Include="Assets\Scripts\Toolbox\PlaySong.cs" />
-     <Compile Include="Assets\Scripts\Toolbox\Singleton.cs" />
      <Compile Include="Assets\Scripts\Toolbox\Toolbox.cs" />
-     <Compile Include="Assets\Scripts\__GameData.cs" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
-     <None Include="Assets\Scripts\Toolbox\NOTE.txt" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
      <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
      <None Include="Assets\Misc\Shaders\InvisibleShadowReceiver.shader" />
      <None Include="Assets\Extra Assets\EZReplayManager\Standard Assets\Skyboxes\skybox info.txt" />
      <None Include="Assets\Extra Assets\TagFrenzy\Resources\Tags.xml" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
      <None Include="Assets\Extra Assets\EZReplayManager\example2\Gem Shader\diamond shader.shader" />
  <Reference Include="EZReplayManagerDemo">
- <HintPath>H:/UAHDX/Unity Hockey/Assets/Extra Assets/EZReplayManager/extension/scripts/EZReplayManagerDemo.dll</HintPath>
+ <HintPath>D:/PortableApps/PortableApps/MINE/UAHDX/Unity Hockey/Assets/Extra Assets/EZReplayManager/extension/scripts/EZReplayManagerDemo.dll</HintPath>
  </Reference>
  <Reference Include="System.Drawing">
- <HintPath>H:/UAHDX/Unity Hockey/Assets/Scripts/System.Drawing.dll</HintPath>
+ <HintPath>D:/PortableApps/PortableApps/MINE/UAHDX/Unity Hockey/Assets/Scripts/Menus/System.Drawing.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

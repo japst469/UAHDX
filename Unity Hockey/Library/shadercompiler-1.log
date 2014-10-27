@@ -1,37 +1,9 @@
-Base path: C:/Program Files (x86)/Unity/Editor/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-1-8668
+Base path: C:/Program Files (x86)/Productivity/Unity/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-1-5320
 Cmd: getPlatforms
-Cmd: preprocess
-  insize=818 outsize=818 ok=1
-Cmd: preprocess
-  insize=472 outsize=472 ok=1
-Cmd: preprocess
-  insize=835 outsize=835 ok=1
-Cmd: preprocess
-  insize=730 outsize=730 ok=1
-Cmd: preprocess
-  insize=608 outsize=608 ok=1
-Cmd: preprocess
-  insize=1355 outsize=1355 ok=1
-Cmd: preprocess
-  insize=316 outsize=316 ok=1
-Cmd: preprocess
-  insize=634 outsize=634 ok=1
-Cmd: preprocess
-  insize=963 outsize=963 ok=1
 Cmd: compileSnippet
   error: 2 plat 8 at (113): 'vert': function return value missing semantics
   api=8 type=0 insize=1336 outsize=0 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=0
 Cmd: compileSnippet
   error: 2 plat 8 at (123): 'frag': input parameter 'i' missing semantics
   api=8 type=1 insize=1336 outsize=0 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=0
-Cmd: compileSnippet
-  error: 2 plat 8 at (113): 'vert': function return value missing semantics
-  api=8 type=0 insize=1336 outsize=0 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=0
-Cmd: compileSnippet
-  error: 2 plat 8 at (123): 'frag': input parameter 'i' missing semantics
-  api=8 type=1 insize=1336 outsize=0 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=0
-Cmd: preprocess
-  insize=3394 outsize=1924 ok=1
-Cmd: preprocess
-  insize=3393 outsize=1923 ok=1
