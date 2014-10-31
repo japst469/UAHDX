@@ -130,7 +130,7 @@ public class Toolbox : MonoBehaviour
         public bool sound = true;                           //Sfx on/off
         public bool announcer = true;                       //Announcer on/off
         public bool Reservetype = false;                    //@Determines whether one or multiple powerups in reserve. NOT implemnted in Options menu yet!
-        public bool DBug = true;                            //Debug mode variable, for us developers to debug stuff :).
+        public bool DBug = false;                            //Debug mode variable, for us developers to debug stuff :).
     }
 
     //Puck variables
@@ -335,6 +335,36 @@ public class Toolbox : MonoBehaviour
             if (tag != Tags.Green) { obj.RemoveTag(Tags.Green); }
             if (tag != Tags.Yellow) { obj.RemoveTag(Tags.Yellow); }
             if (tag != Tags.NoColor) { obj.RemoveTag(Tags.NoColor); }
+        }
+    }
+
+    //Common position routines
+    public static class Position
+    {
+        public static void RandomizeInRegion(GameObject Anchore, GameObject Object,float radius_X, float radius_Z)
+        {
+            //Object variables
+            float x, z; //It's x and z offset coords, local to Spawner
+            //Anchor object
+            float Anchor_X, Anchor_Y, Anchor_Z;    //Its x, y, z coords
+
+            Anchor_X = Anchore.transform.position.x;
+            Anchor_Y = Anchore.transform.position.y;
+            Anchor_Z = Anchore.transform.position.z;
+
+            Vector3 NewPos;     //New position vector
+            UnityEngine.Random.seed = (int)System.DateTime.Now.Ticks;   //@Get new randomization seed from system time. Needs to be synce in netgames!
+
+            //Get random X & Z offset, and Type of powerup        
+            x = UnityEngine.Random.Range(-radius_X, radius_X);
+            z = UnityEngine.Random.Range(-radius_Z, radius_Z);
+
+            //Place It, relative to Spawner
+            NewPos.x = Anchor_X + x;
+            NewPos.y = Anchor_Y;
+            NewPos.z = Anchor_Z + z;
+            Object.gameObject.transform.position = NewPos; //Update the position
+            SoundManager.Play("Teleport");  //Play Teleport sfx
         }
     }
 }

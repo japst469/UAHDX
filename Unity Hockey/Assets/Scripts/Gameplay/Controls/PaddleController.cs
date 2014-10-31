@@ -16,8 +16,8 @@ public class PaddleController : MonoBehaviour {
     public Toolbox.Color Color;     //Color of player to initz to
     
     const byte LEN=17;                  //Length of arrays below
-    bool[] aPwr = new bool[LEN];        //Bitfield determining which powerup(s) is/are active
-    byte[] sPwr = new byte[LEN];        //Multiplicity of poweurp collected in inventory
+    bool[] aPwr = new bool[LEN+1];        //Bitfield determining which powerup(s) is/are active
+    byte[] sPwr = new byte[LEN+1];        //Multiplicity of poweurp collected in inventory
     
     int Score;                          //Score 0-10
     bool Alive;                         //Whether the puck is alive
@@ -26,6 +26,7 @@ public class PaddleController : MonoBehaviour {
     public float Height = 0.25f;        //?
     public float multiplier;            //?
     private RaycastHit hit;             // Struct to hold the hit data
+    bool Ready = false;
 
     //Resources
     public Material[] Colors = new Material[5 - 1]; //Color materials
@@ -48,31 +49,38 @@ public class PaddleController : MonoBehaviour {
         Player.sPwr = sPwr;
         Player.Score = 0;
         Player.Alive = true;
+        Ready = true;
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        if (Ready == false)
+        {
+            return;
+        }
+
         // Raycast and detect only collisions with the game board.
-        Player.Color = Toolbox.Color.Red;   //Get Player's color
+        //Player.Color = Toolbox.Color.Red;   //Get Player's color
         if ( Physics.Raycast( Camera.main.ScreenPointToRay(Input.mousePosition), out hit, (1<<8) ) )
         {
             List<Tags> enumTags = hit.collider.gameObject.tagsEnum();   //Get tags of raycasted object
             if (enumTags.Contains(Tags.Ground) == true) //If object is ground
             {
                 //Log somethings if in DBug mode
-                if (Toolbox.Options.DBug == true)
-                {
+                //if (Toolbox.Options.DBug == true)
+                //{
                     Debug.Log("Player.Color = " + Player.Color.ToString());
                     Debug.Log("Color2Tag = " + Toolbox.Tagmgmt.ColorVal2Tag(Player.Color).ToString());
-                }
+                //}
 
                 //Check if Player has same color as ground, and if so, move it
                 //If DBug is on, always move
-                //@Proper color detection NOT working!
-                if ((enumTags.Contains(Toolbox.Tagmgmt.ColorVal2Tag(Player.Color)) == true)||(Toolbox.Options.DBug==true))
-                {  
+
+                //if ((enumTags.Contains(Toolbox.Tagmgmt.ColorVal2Tag(Player.Color)) == true)||(Toolbox.Options.DBug==true))
+                //{  
                     rigidbody.MovePosition(hit.point);
-                }
+                //}
             }
         }
     }
@@ -80,6 +88,11 @@ public class PaddleController : MonoBehaviour {
     //Check collision types
     void OnCollisionEnter(Collision collision)
     {
+        if (Ready == false)
+        {
+            return;
+        }
+
         List<Tags> enumTags = collision.gameObject.tagsEnum();  //Get tags of collided object
         
         //If object collided with is the invisible boundries, play sfx

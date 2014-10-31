@@ -74,7 +74,8 @@ public class MainMenu : MonoBehaviour {
                     if (Input.GetMouseButton(0))
                     {
                         SoundManager.Play("Select");
-                        Application.LoadLevel("FMV2");      //Load 2nd FMV
+                        Application.LoadLevel("Game");
+                        //Application.LoadLevel("FMV2");      //Load 2nd FMV
                     }
                     break;
                 

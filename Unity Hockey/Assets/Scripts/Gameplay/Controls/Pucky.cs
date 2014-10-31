@@ -21,8 +21,6 @@ public class Pucky : MonoBehaviour {
     //Resources
     public GameObject PuckSpawner;  //Puck Spawner object
     public Material[] Colors = new Material[5 - 1]; //Color materials
-    bool Ready = false;      //Flag to determine if Start() was ran
-    bool blnReset = false;  //Flag to determine whether to respawn puck at PuckSpawner
 
 	// Use this for initialization
 	void Awake () {
@@ -33,33 +31,18 @@ public class Pucky : MonoBehaviour {
         Pux.Color = Color;
         Pux.Alive = Alive;
         Pux.Extra = Extra;
-
-        //Constrain object on Y, and with no rotation
-        Pux.go.rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
-        Pux.go.rigidbody.useGravity = false;    //Disable gravity
-        Ready = true;   //I.M Rdy!
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        List<Tags> PuxTags = Pux.go.tagsEnum(); //Get the tags on the puck
-
-        //If it has reset, reset the puck
-        if (PuxTags.Contains(Tags.Reset)==true)
-        {
-            Reset();
-        }
-
         //If the puck is NOT ready, or it is NOT alive
-        if ((Ready == false)||(Pux.Alive==false))
+        if (Pux.Alive == false)
         {
-            Child.gameObject.renderer.enabled=false;    //@Disable its visual. Malfunctioning?
+            //Child.gameObject.renderer.enabled = false;
             return;
         }
-        Child.gameObject.renderer.enabled=true; //Enable its rendere
-
-        Chameleon();    //Do color changing
-        
+        //Child.gameObject.renderer.enabled=true; //Enable its rendere
+        Chameleon();    //Do color changing        
 	}
 
     //Routine to change the puck's color upon paddle hit
@@ -101,21 +84,10 @@ public class Pucky : MonoBehaviour {
         }
     }
 
-    //Routine to respawn a puck
-    //@NOT entirely working!
     void Reset()
-    {
-            
-            //If reset runonce flag is false, move puck to PuckSpanwer's position
-            if (blnReset==false)
-            {
-                Pux.go.transform.position = PuckSpawner.gameObject.transform.position;
-                blnReset = true;
-            }
-
-            //Change constraints to only X & Z, and use gravity
-            Pux.go.rigidbody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
-            Pux.go.rigidbody.useGravity = true;
+    {                       
+            //@TODO: Freeze puck motion (to prevent Portal like teleportation
+            Pux.go.transform.position = PuckSpawner.gameObject.transform.position;
             Toolbox.Tagmgmt.RadioColorTags(Pux.go, Tags.NoColor);   //Remove tag
             Chameleon();    //Change colors again
     }
@@ -123,30 +95,11 @@ public class Pucky : MonoBehaviour {
     //Routine to process puck collision actions
     void OnCollisionEnter(Collision otherObj)
     {
-        //IF NOT ready, and NOT alive, NOP
-        if ((Ready == false)||(Pux.Alive==false))
-        {
-            return;
-        }
         
         //Get list of tags
         Toolbox.Color Clr = Pux.Color;  //Puck color
         List<Tags> OtherTags = otherObj.gameObject.tagsEnum();  //Colided object's tags
         List<Tags> PuxTags = Pux.go.tagsEnum();                 //The puck's tags
-
-        //If Reset status, then
-        if (PuxTags.Contains(Tags.Reset)==true)
-        {
-            //Check collision with ground
-            if (OtherTags.Contains(Tags.Ground)==true)
-            {
-                //@Attempt, and FAIL, at resetting constraints to Y and all rotations. Disable gravity too
-                Pux.go.rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
-                Pux.go.rigidbody.useGravity = false;
-                Pux.go.RemoveTag(Tags.Reset);   //Remove the Reset tag
-                blnReset = false;   //Set reset to false. Resume normal operations!
-            }
-        }
 
         //Can't use switch here
         //Due to it being fussy with having to use immediates, NOT variables :(
@@ -201,6 +154,21 @@ public class Pucky : MonoBehaviour {
                     }
                 }
             }
+        }
+
+        if (OtherTags.Contains(Tags.Ground) == true)
+        {
+            //Constrain object on Y, and with no rotation
+            Pux.go.transform.Rotate(0, 0, 0);
+            Pux.go.rigidbody.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotation;
+            Pux.go.rigidbody.useGravity = false;    //Disable gravity
+        }
+
+        //If has Reset tag, respawn puck
+        if (OtherTags.Contains(Tags.Reset) == true)
+        {
+            Pux.go.rigidbody.constraints = RigidbodyConstraints.None;
+            Reset();
         }
             
     }

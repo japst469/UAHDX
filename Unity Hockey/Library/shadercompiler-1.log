@@ -1,9 +1,7 @@
-Base path: C:/Program Files (x86)/Productivity/Unity/Data
-Pipe name: \\.\pipe\UnityShaderCompiler-1-5320
+Base path: C:/Program Files (x86)/Unity/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-1-8880
 Cmd: getPlatforms
-Cmd: compileSnippet
-  error: 2 plat 8 at (113): 'vert': function return value missing semantics
-  api=8 type=0 insize=1336 outsize=0 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=0
-Cmd: compileSnippet
-  error: 2 plat 8 at (123): 'frag': input parameter 'i' missing semantics
-  api=8 type=1 insize=1336 outsize=0 kw=DIRECTIONAL SHADOWS_OFF LIGHTMAP_OFF DIRLIGHTMAP_OFF ok=0
+Cmd: preprocess
+  insize=1893 outsize=1893 ok=1
+Cmd: preprocess
+  insize=1725 outsize=1007 ok=1
