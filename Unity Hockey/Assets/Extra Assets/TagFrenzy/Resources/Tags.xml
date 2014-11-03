@@ -12,4 +12,11 @@
   <tag id="10">Yellow</tag>
   <tag id="11">NoColor</tag>
   <tag id="12">Reset</tag>
+  <tag id="13">P_Wall</tag>
+  <tag id="14">P_Bumper</tag>
+  <tag id="15">P_GravWell</tag>
+  <tag id="16">P_PortalB</tag>
+  <tag id="17">P_PortalR</tag>
+  <tag id="18">P_HUD</tag>
+  <tag id="19">P_HUD_Mult</tag>
 </tags>
