@@ -36,16 +36,3 @@ C:\Users\Anthony\Documents\Technology\Programming\Unity\UAHDX\Unity Hockey\Temp\
 C:\Users\Anthony\Documents\Technology\Programming\Unity\UAHDX\Unity Hockey\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
 C:\Users\Anthony\Documents\Technology\Programming\Unity\UAHDX\Unity Hockey\obj\Debug\Assembly-CSharp.dll
 C:\Users\Anthony\Documents\Technology\Programming\Unity\UAHDX\Unity Hockey\obj\Debug\Assembly-CSharp.pdb
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\Temp\bin\Debug\Assembly-CSharp.dll
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\Temp\bin\Debug\Assembly-CSharp.pdb
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\Temp\bin\Debug\Assembly-UnityScript-firstpass.dll
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\Temp\bin\Debug\EZReplayManagerDemo.dll
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\Temp\bin\Debug\UnityEditor.dll
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\Temp\bin\Debug\UnityEngine.dll
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\Temp\bin\Debug\Mono.Cecil.dll
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\Temp\bin\Debug\nunit.framework.dll
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\Temp\bin\Debug\Unity.DataContract.dll
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\Temp\bin\Debug\ICSharpCode.NRefactory.dll
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\obj\Debug\Assembly-CSharp.dll
-C:\Users\Anthony\Documents\Technology\Programming\UAHDX\Unity Hockey\obj\Debug\Assembly-CSharp.pdb
